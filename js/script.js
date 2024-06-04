@@ -34,12 +34,15 @@ function calculateBMI() {
     resultNumberBMI.innerHTML = BMI;
 
     if (BMI < 18.5) {
+        container.style.boxShadow = '0 0 20px rgba(133, 142, 3, 0.388)';
         resultNumberBMI.style.color = '#ffc44d';
         resultTitleBMI.innerHTML = 'Under-weight';
     } else if (BMI >= 18.5 && BMI <= 24.9) {
+        container.style.boxShadow = '0 0 20px rgba(0, 156, 42, 0.2)';
         resultNumberBMI.style.color = '#0be881'
         resultTitleBMI.innerHTML = 'Normal';
     } else if (BMI >= 24.9) {
+        container.style.boxShadow = '0 0 20px rgba(231, 12, 12, 0.2)';
         resultNumberBMI.style.color = '#ff5e4d'
         resultTitleBMI.innerHTML = 'Over-weight';
     };
